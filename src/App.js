@@ -4,6 +4,9 @@ import DashBoard from "./Pages/DashBoard";
 import Register from "./Pages/Register";
 import Login from "./Pages/Login";
 import Header from "./Components/Header";
+import {ToastContainer} from "react-toastify"
+import 'react-toastify/dist/ReactToastify.css'
+import MainPage from "./Pages/MainPage";
 
 function App() {
   return (
@@ -15,9 +18,11 @@ function App() {
           <Route path="/" element={<DashBoard/>}/>
           <Route path="/login" element={<Login/>}/>
           <Route path="/register" element={<Register/>}/>
+          
          </Routes>
         </div>
       </BrowserRouter>
+      <ToastContainer/>
     </>
   );
 }
